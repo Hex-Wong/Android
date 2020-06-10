@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+        </com.baidu.mapapi.map.MapView>
+
+        <LinearLayout
+            android:id="@+id/sug_search"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#DDDDDD"
+                    android:hint="请输入地点"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColorHint="#0909F7">
+
+                </EditText>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/sug_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:visibility="invisible">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="200dp"
+            app:fab_addButtonColorNormal="@color/black"
+            app:fab_addButtonColorPressed="@color/black2"
+            app:fab_expandDirection="up">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/black"
+                app:fab_colorPressed="@color/black2"
+                app:fab_icon="@drawable/locate"
+                app:fab_size="mini"
+                app:fab_title="定位"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/black"
+                app:fab_colorPressed="@color/black2"
+                app:fab_icon="@drawable/home"
+                app:fab_size="mini"
+                app:fab_title="设置">
+
+            </com.getbase.floatingactionbutton.FloatingActionButton>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/black"
+                app:fab_colorPressed="@color/black2"
+                app:fab_icon="@drawable/gas_station"
+                app:fab_size="mini"
+                app:fab_title="加油站">
+
+            </com.getbase.floatingactionbutton.FloatingActionButton>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <RelativeLayout
+            android:id="@+id/poi_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/poi_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="550dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/set_place"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_background"
+                android:text="设为常去地点" />
+
+            <Button
+                android:id="@+id/navi"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_background"
+                android:text="前往此处" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

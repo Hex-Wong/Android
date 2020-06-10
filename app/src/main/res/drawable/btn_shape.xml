@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/nsdk_carmode_blue_text"/>  //背景颜色
+    <corners android:radius="25dp"/>   //圆角弧度
+
+</shape>

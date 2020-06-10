@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="during_setting_btn_height">30dp</dimen>
+    <dimen name="during_setting_btn_bottom_line_margin">17dp</dimen>
+    <dimen name="during_setting_btn_title_bottom_margin">16dp</dimen>
+    <dimen name="during_setting_btn_title_top_margin">12dp</dimen>
+    <dimen name="custom_profile_image">50dp</dimen>
+    <dimen name="custom_profile_padding">2dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="poi_title_size">14sp</dimen>
+    <dimen name="ui_size">12sp</dimen>
+    <dimen name="actionbar_size">35sp</dimen>
+</resources>

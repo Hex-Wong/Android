@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/location_mark"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="30sp"></TextView>
+
+            <TextView
+                android:id="@+id/text_weather"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/black2"
+                android:textSize="24sp"></TextView>
+
+            <TextView
+                android:id="@+id/text_wind"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/black2"
+                android:textSize="24sp"></TextView>
+
+            <TextView
+                android:id="@+id/texd_temp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/black2"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imag_weather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/speak"></ImageView>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:text="温馨提示"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_message_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:singleLine="false"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/text_message_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:singleLine="false"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="请选择您的身份"
+            android:textSize="18sp"></TextView>
+
+        <Button
+            android:id="@+id/driver"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_background"
+            android:text="司    机"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"></Button>
+
+        <Button
+            android:id="@+id/master"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_background"
+            android:text="管  理  员"
+            android:textSize="24sp"></Button>
+    </LinearLayout>
+</LinearLayout>

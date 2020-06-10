@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/edit_shape"
+        android:drawableLeft="@drawable/user_name"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名"
+        android:singleLine="true"></EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_shape"
+        android:drawableLeft="@drawable/password"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"></EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_background"
+        android:text="登   录"
+        android:textSize="24sp"></Button>
+</LinearLayout>
